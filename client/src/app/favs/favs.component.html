@@ -1,0 +1,17 @@
+<button color="primary" mat-fab aria-label="Example icon-button with a heart icon">
+  <mat-icon>favorite</mat-icon>
+</button>
+
+<button color="warn" mat-fab aria-label="Example icon-button with a heart icon">
+  <mat-icon>favorite</mat-icon>
+</button>
+
+<div *ngIf="data" class="flight-container">
+  <div *ngFor="let flight of data, let i = index" class="flight-div">
+    <h1>{{flight.name}}</h1>
+    <h2>Flight No.{{flight.flight_number}}</h2>
+    <img src="{{flight.links.patch.small}}">
+  </div>
+</div>
+
+
